@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const controller = require("../controllers/controllers");
+const controller = require("../controllers/project_controllers");
 
 
 
 // Route for home page
-router.route("/");
+router.route("/",controller.homePage);
 
 // Route to create project page and create project
 router.route("/create_project");
