@@ -5,7 +5,7 @@ const controller = require("../controllers/project_controllers");
 
 
 // Route for home page
-router.route("/",controller.homePage);
+router.get("/",controller.homePage);
 
 // Route to create project page and create project
 router.route("/create_project");
