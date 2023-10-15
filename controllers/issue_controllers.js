@@ -1,11 +1,14 @@
+const Project = require("../models/projects");
+const Issue = require("../models/issues");
+
 module.exports.page =async function(req,res){
-    const project = await ProjectModel.findById(req.params.id);
+    const project = await Project.findById(req.params.id);
     res.render('createIssue',{title:"Create Issue ", project});
 }
 
 module.exports.create = async function(req,res){
-    const project = await ProjectModel.findById(req.params.id);
-    const issue = await IssueModel.create({
+    const project = await Project.findById(req.params.id);
+    const issue = await Issue.create({
         title:req.body.title,
         description:req.body.description,
         label:req.body.label,
