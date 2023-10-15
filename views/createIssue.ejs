@@ -4,7 +4,7 @@
     <div class="createIssueContainer">
         <p class="projectName">Project: <span class="name"><%- project.projectName %></span></p>
 
-       <form id="createProjectForm" action="" method="POST">
+       <form id="createProjectForm" action="/issueCreate/<%= project.id %>" method="POST">
         <input name="title" type="text" class="margin" placeholder="Title..." required>
         <input name="description" type="text" class="margin" placeholder="Description..." required>
         <div class="labelContainer">

@@ -18,5 +18,5 @@ module.exports.create = async function(req,res){
     project.issues.push(issue);
     await project.save();
     await issue.save();
-    res.redirect("back");
+    res.redirect(`/project_details/${req.params.id}`);
 }

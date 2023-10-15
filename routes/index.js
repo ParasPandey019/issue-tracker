@@ -21,7 +21,7 @@ router.get("/project_details/:id", projectController.detail);
 router.get("/create_issue/:id",issueController.page);
 
 // // Route to create issue
-// router.get("/create_issue/:id/create/:id",issueController.create);
+router.post("/issuecreate/:id",issueController.create);
 
 // Exporting all the routes
 module.exports = router;
