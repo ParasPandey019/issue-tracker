@@ -4,7 +4,7 @@
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
     height: 90vh;
-    margin: 0
+    margin-top: 0px;
 }
 
 .container .mainHeading {
@@ -14,8 +14,8 @@
 }
 
 .container .mainHeading .addProject {
-    color: #0a1019;
-    background-color: #39ff14;
+    color: white;
+    background-color: gray;
     font-size: 1.5rem;
     padding: .4rem 1rem;
     border-radius: .2rem;
@@ -43,9 +43,6 @@
     width: 20px;
 }
 
-.container .projectContainer::-webkit-scrollbar-thumb {
-    background-color: #39ff14;
-}
 
 .container .projectContainer .box {
     width: 80%;
@@ -56,14 +53,17 @@
     justify-content: center;
     padding: 2rem;
     border-radius: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+}
+
+.box{
+    box-shadow: 0px 0px 20px #0003;
 }
 
 .box .projectName {
     font-size: 2.2rem;
     font-weight: 500;
-    /* color:#2cc810; */
-    color:darkviolet;
+    color: #276b8d;
     font-weight:bold;
 }
 
@@ -79,7 +79,7 @@
     align-items: center;
 }
 .box .boxFooter .name{
-    color:darkviolet;
+    color: #276b8d;
     font-size:1.5rem;
     font-weight:bold;
 }
@@ -90,7 +90,7 @@
 }
 
 .box .boxLink:hover {
-    color: darkviolet;
+    color: gray;
 }
 
 .box .projectAuthor {
@@ -118,14 +118,14 @@
     width: 130px;
     right: 60px;
     top: -50px;
-    background: #39ff14;
+    border: 1px solid black;
 }
 
 .tooltipCreateIssue {
     width: 120px;
     right: -10px;
     top: -50px;
-    background: #39ff14;
+    border: 1px solid black;
 }
 
 .projectDetails:hover+.tooltip {
@@ -136,15 +136,11 @@
 .createIssue:hover+.tooltip {
     display: block;
 }
-.addProject:hover + .tooltip{
-    display:block;
+
+.addProject:hover{
+    background-color: black;
 }
-.addProjectTooltip{
-    top:-10px;
-    right:-50px;
-    background: darkviolet;
-    color:white;
-}
+
 
 .boxFooter .issueCount{
     font-size:1.3rem;
@@ -155,7 +151,7 @@
 .boxFooter .issueCount .count{
     font-size:1.5rem;
     font-weight: bold;
-    color:blueviolet;
+    color: red;
 }
 
 @media screen and (max-width:1270px) {

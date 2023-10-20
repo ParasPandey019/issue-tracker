@@ -16,13 +16,13 @@
     padding:1rem 2.5rem;
     font-size:1.5rem;
     margin-top:1rem;
-    background-color: #39ff14;
-    transition: all .2s ease-in-out;
+    background-color: black;
+    color: white;
     cursor:pointer;
-}
-.container #createProjectForm input[type="submit"]:hover{
     border-radius:2rem;
 }
+
+
 .container #createProjectForm textarea{
     margin:1rem 0;
     padding:1rem 2.5rem;

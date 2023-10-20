@@ -9,9 +9,7 @@
     width:50%;
     transition:all .2s ease-in-out;
 }
-.container select:focus{
-    border-radius:1rem;
-}
+
 .labelContainer{
     display:flex;
     justify-content: space-between;
@@ -20,10 +18,7 @@
     font-size:1.5rem;
     padding:.5rem 0;
 }
-.container select option:hover{
-    background-color: black;
-    color:#39ff14;
-}
+
 #label{
     padding:.5rem;
     font-size:1.2rem;
@@ -31,18 +26,16 @@
 
 #label .option{
     padding:.5rem;
-    background-color: #39ff14;
+    background-color: rgb(234, 225, 225);
     
 }
-/* #label .option:hover{
-    
-} */
+
 .createIssueContainer .projectName{
     font-size:1.3rem;
 }
 .createIssueContainer .projectName .name{
     font-size:1.5rem;
-    color:darkviolet;
+    color:#276b8d;
     font-weight:bold;
 }
 .createIssueAndAuthor{
@@ -56,7 +49,6 @@
 }
 .tooltipCIProjectDetails{
     width: 120px;
-    /* left: 30px; */
     right:-15px;
     top: -50px;
     background: #39ff14;
