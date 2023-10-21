@@ -2,7 +2,7 @@
 A web applicaiton to add some basic info about a project and to view and add issues to the project
 
 ## Installation
-To install CSV_Upload, please follow these steps:
+To install issue_tracker, please follow these steps:
 
 Clone this repository using the following command:
 ```
